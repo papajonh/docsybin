@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Define a base como a pasta do seu projeto
+    RewriteBase /docsybin/
+
+    # 1. REMOÇÃO VISÍVEL: Se alguém digitar /Public/ ou acessar pastas protegidas
+    # Isso limpa a URL no navegador e manda para a raiz do projeto
+    RewriteCond %{THE_REQUEST} /Public/ [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/docsybin/(app|config|core|vendor|storage) [NC]
+    RewriteRule ^(.*)$ /docsybin/ [L,R=301]
+
+    # 2. REDIRECIONAMENTO INTERNO: Manda tudo silenciosamente para a Public
+    # Verifica se já não estamos na Public para evitar loop
+    RewriteCond %{REQUEST_URI} !^/docsybin/Public/ [NC]
+    RewriteRule ^(.*)$ Public/$1 [L]
+</IfModule>
