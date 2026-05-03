@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace App\Controllers\Router_Controllers;
 use Core\Routers\Router;
 use App\Controllers\Api_Controllers\Api_Get_Data;
+use App\Views\Home;
 
 class RouterController
 {
@@ -23,7 +24,8 @@ class RouterController
 
             case '/docsybin':
             case '/docsybin/home':
-                echo '<h1>Home Page</h1>';
+                $render =new Home;
+                echo $render->index();
                 break;
 
             case '/docsybin/login':

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    border: o;
+}
+
+body {
+    background-color: rgb(2, 2, 37);
+}
+
+header {
+    width: 100vw;
+    height: 7rem;
+    background-color: rgb(24, 23, 23);
+}
+
+.header-container {
+    margin: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.header-container .container-menu {
+    margin: 5px;
+    width: 3rem;
+    height: 3rem;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-container .container-logo {
+    margin: 5px;
+    width: 3rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.header-container .container-path {
+    margin: 5px;
+    width: 50%;
+    height: 3rem;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.header-container .container-painel {
+    margin: 5px;
+    width: 41%;
+    height: 3rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.container-nav {
+    margin: 10px;
+    width: 100%;
+    height: 2rem;
+}
+
+.container-nav nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.container-nav nav div {
+    min-width: 10%;
+    height: 1.5rem;
+    color: white;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main .container-lib {
+    min-width: 18rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: bisque;
+}
+
+main .container-lib .container-lib-header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(43, 38, 33);
+    color: white;
+}
+
+main .container-lib .container-lib-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(24, 21, 18);
+    align-items: center;
+    text-align: center;
+
+}
+
+main .container-lib .container-lib-body label {
+    margin: 10px;
+    color: white;
+    font-size: large;
+}
+
+main .container-body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(22, 22, 37);
+    align-items: center;
+    text-align: center;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+}
+
+main .container-body .container-body-main {
+    width: 50%;
+    height: 40%;
+    border: 1px whitesmoke solid;
+    border-radius: 10px;
+}
+
+main .container-body .container-body-main .container-body-header {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px whitesmoke solid;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+main .container-body .container-body-main .container-body-header label {
+    min-width: 15%;
+    margin: 10px;
+    color: white;
+    font-size: large;
+}
